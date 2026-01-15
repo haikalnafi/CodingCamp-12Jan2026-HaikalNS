@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Project</title>
+    <title>Portofolio Haikal</title>
+
+     <!--CSS External Linking -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!--Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>Welcome to Mini Project</h1>
+   
+<!--Header Content Area -->
+   <header class="main-header p-[8px]">
+    <!--Logo Area -->
+    <div class="logo"></div>
+
+    <!--Navigation Links -->
+    <nav class="flex">
+        <a class="border border-black p-2 rounded-md" href="#home-page">Home</a>
+         <a class="border border-black p-2 rounded-md" href="#our-profile">Our Profile</a>
+        <a class="border border-black p-2 rounded-md" href="#our-projects">Portofolio</a>
+        <a class="border border-black p-2 rounded-md" href="#message-us">Message Us</a>
+    </nav>
+   </header>
+
+   <hr />
+
+    <!--Main Content Area -->
+   <main>
+    <!--Home Pages Section -->
+    <section id="home-pages" class="main-content p-[50px] text-center content-center">
+        <h2 class="text-xl font-bold" id="Welcome-speech">Welcome to Our Website</h2>
+        <p class="mt-2">Hello! I'm Haikal, a passionate developer specializing in web development and design. Explore my projects and feel free to reach out!</p>
+    </section>
+
+    <hr />
+
+    <!--Our Profile Page-->
+    <section id="our-profile-page" class="main-content p-[50px] text-center content-center">
+        <h2 class="text-xl font-bold">About Haikal Company</h2>
+        <p class="mt-2">Haikal Company is a leading web development firm specializing in creating modern, responsive websites and applications. We focus on delivering high-quality solutions tailored to our clients' needs.</p>
+    </section>
+
+    <hr />
+
+    <!--Portofolio Page-->
+    <section id="our-projects-page" class="main-content p-[50px] text-center content-center">
+        <h2 class="text-xl font-bold">Our Portofolio</h2>
+        <p class="mt-2">Here are some of our recent works:</p>
+        <ul class="list-disc list-inside mt-2">
+            <li>Project A - E-commerce Website</li>
+            <li>Project B - Portfolio Website</li>
+            <li>Project C - Blog Platform</li>
+        </ul>
+    </section>
+
+    <hr />
+
+    <!--Message Us Page-->
+    <section id="message-us-page" class="main-content p-[50px] text-center content-center">
+        <header>
+        <h2 class="text-xl font-bold">Message Us</h2>
+        <p class="mt-2">Feel free to reach out for inquiries or collaborations!</p>
+        </header>
+
+        <form>
+            <div class="mb-4">
+                <label class="block mb-2" for="name">Name:</label>
+                <input class="w-full p-2 border rounded" type="text" id="name" name="name" required/>
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2" for="email">Email:</label>
+                <input class="w-full p-2 border rounded" type="email" id="email" name="email" required/>
+            </div>
+            <div class="mb-4">
+                <label class="block mb-2" for="message">Message:</label>
+                <textarea class="w-full p-2 border rounded" id="message" name="message" rows="4"></textarea>
+            </div>
+            <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
+        </form>
+    </section>
+   </main>
+
+   <!--Footer Content-->
+   <footer>
+    <p class="text-center p-4 bg-gray-200">© 2026 Haikal Company. All rights reserved.</p>
+   </footer>
+
+    <!--JavaScript External Linking -->
+    <script src="JS/script.js"></script>
 </body>
 </html>
